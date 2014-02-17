@@ -41,15 +41,37 @@
             $this = $(this);
 
         $this.bind('touchstart', touchstart);
-
+        
         function touchstart(event) {
-          var touches = event.originalEvent.touches;
-          if (touches && touches.length) {
-            startX = touches[0].pageX;
-            startY = touches[0].pageY;
-            $this.bind('touchmove', touchmove);
-          }
-        }
+        	var touches = event.originalEvent.touches;
+				  var touchedObject = touches[0].target;
+				  if (touchedObject.nodeName=='A' || touchedObject.nodeName == 'LABEL' || touchedObject.nodeName == 'SPAN'){
+				      $(touchedObject).click();
+				      return 1;
+				  }
+				  if(!(
+				        typeof($._data(touchedObject, "events")) !== 'undefined' 
+				        && $._data(touchedObject, "events").click != null
+				        || touchedObject.nodeName == 'A' || touchedObject.nodeName == 'LABEL' || touchedObject.nodeName == 'SPAN'
+				    )){
+				    startX = touches[0].pageX;
+				    startY = touches[0].pageY;
+				    $this.bind('touchmove', touchmove);
+				  }
+				   if(!$("body").hasClass("disabled-onepage-scroll")) {
+				  event.preventDefault();
+				  }
+				}
+        
+        
+        //function touchstart(event) {
+        //  var touches = event.originalEvent.touches;
+        //  if (touches && touches.length) {
+        //    startX = touches[0].pageX;
+        //    startY = touches[0].pageY;
+        //    $this.bind('touchmove', touchmove);
+        //  }
+        //}
 
         function touchmove(event) {
           var touches = event.originalEvent.touches;
