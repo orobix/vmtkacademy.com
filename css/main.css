@@ -153,6 +153,7 @@ h2 {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
+
 .back:hover {
   color: black;
   background: rgba(255, 255, 255, 0.5);
@@ -169,7 +170,6 @@ h2 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%, #ffffff 100%);
   font-weight: bold;
   font-size: 13px;
   color: #000;
@@ -178,11 +178,11 @@ h2 {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
+
 .bottom:hover {
   color: black;
   background: rgba(255, 255, 255, 0.5);
 }
-
 
 header {
   position: relative;
@@ -226,17 +226,13 @@ header {
   line-height: 160%;
 }
 
+.viewing-page-1 .pure-button{
+	background-color: #EAEBE5;
+}
+
 .viewing-page-1 .back{
   background: rgba(0, 0, 0, 0.25);
   color: #FFF;
-}
-
-.viewing-page-1 .bottom{
-	background: -webkit-linear-gradient(rgba(234,235,229,0.2) 0%, #EAEBE5 100%);
-}
-
-.viewing-page-1 .pure-button{
-	background: -webkit-linear-gradient(rgba(234,235,229,0.2) 0%, #EAEBE5 100%);
 }
 
 
@@ -287,7 +283,7 @@ header {
 }
 
 .viewing-page-2 .pure-button{
-	background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%, #ffffff 100%);
+	background-color: #FFF;
 }
 
 /* page3 */
@@ -332,13 +328,13 @@ header {
 
 .viewing-page-3 .back{
   background: rgba(0, 0, 0, 0.25);
-  color: #FFF;
+  color: #fdfdfd;
 }
 
 .viewing-page-3 .pure-button{
-	background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%, #ffffff 100%);
+	background-color: #fdfdfd;
 }
-  
+
 /* page4 */  
 
 .main section.page4 {
@@ -406,13 +402,12 @@ header {
 
 .viewing-page-4 .back{
   background: rgba(0, 0, 0, 0.25);
-  color: #FFF;
+  color: #fdfdfd;
 }
 
 .viewing-page-4 .pure-button{
-	background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%, #ffffff 100%);
+	background-color: #fdfdfd;
 }
-
 
 /* page 5 */
 
@@ -457,9 +452,8 @@ header {
 }
 
 .viewing-page-5 .pure-button{
-	background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%, #ffffff 100%);
+	background-color: #FFF;
 }
-
 
 /* page 6*/
 
@@ -483,6 +477,7 @@ header {
 .main section.page6 h1 {
 	margin-bottom: 50px;
 }
+
 .main section.page6 h2 {
 	color: black;
   text-align: left;
@@ -509,9 +504,8 @@ header {
 }
 
 .viewing-page-6 .pure-button{
-	background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%, #ffffff 100%);
+	background-color: #FFF;
 }
-
 
 /* page 7 */
 
@@ -551,7 +545,7 @@ header {
 }
 
 .viewing-page-7 .pure-button{
-	background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%, #ffffff 100%);
+	background-color: #FFF;
 }
 
 /* page 8 */
@@ -598,9 +592,8 @@ header {
 }
 
 .viewing-page-8 .pure-button{
-	background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%, #ffffff 100%);
+	background-color: #FFF;
 }
-
 
 /* css styling for scroll */
 body.disabled-onepage-scroll .onepage-wrapper  section {
